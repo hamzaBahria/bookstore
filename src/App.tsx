@@ -1,0 +1,30 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HomePage } from "./components/bookstore/HomePage";
+import { BookListingPage } from "./components/bookstore/BookListingPage";
+import { BookDetailsPage } from "./components/bookstore/BookDetailsPage";
+import { CartPage } from "./components/bookstore/CartPage";
+import { CheckoutPage } from "./components/bookstore/CheckoutPage";
+import { LoginPage } from "./components/bookstore/LoginPage";
+import { AccountPage } from "./components/bookstore/AccountPage";
+import { WishlistPage } from "./components/bookstore/WishlistPage";
+import { ContactPage } from "./components/bookstore/ContactPage";
+
+function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/books" element={<BookListingPage />} />
+        <Route path="/books/:id" element={<BookDetailsPage />} />
+        <Route path="/cart" element={<CartPage />} />
+        <Route path="/checkout" element={<CheckoutPage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/account" element={<AccountPage />} />
+        <Route path="/wishlist" element={<WishlistPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+export default App;
