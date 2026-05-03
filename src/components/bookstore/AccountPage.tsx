@@ -101,7 +101,7 @@ export function AccountPage() {
               </div>
               <hr className="mb-2" />
               <nav className="space-y-1">
-                {navItems.map(({ icon: Icon, label, active, onClick }) => (
+                {navItems.map(({ icon: Icon, label, active }) => (
                   <div key={label}>
                     <button
                       className={`w-full flex items-center gap-3 px-2 py-2 rounded-md text-sm font-medium transition-colors ${
