@@ -63,11 +63,7 @@ const navItems = [
   { icon: MapPin, label: "Addresses" },
   { icon: CreditCard, label: "Payment Methods" },
   { icon: Bell, label: "Notifications" },
-  {
-    icon: LogOut,
-    label: "Sign Out",
-    onClick: (navigate: any) => navigate("/"),
-  },
+  { icon: LogOut, label: "Sign Out" },
 ];
 
 export function AccountPage() {
