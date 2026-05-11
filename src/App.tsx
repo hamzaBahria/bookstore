@@ -5,6 +5,7 @@ import { BookListingPage } from "./components/bookstore/BookListingPage";
 import { BookDetailsPage } from "./components/bookstore/BookDetailsPage";
 import { CartPage } from "./components/bookstore/CartPage";
 import { CheckoutPage } from "./components/bookstore/CheckoutPage";
+import { LandingPage } from "./components/bookstore/LandingPage";
 import { LoginPage } from "./components/bookstore/LoginPage";
 import { AccountPage } from "./components/bookstore/AccountPage";
 import { WishlistPage } from "./components/bookstore/WishlistPage";
@@ -22,7 +23,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<LoginPage />} />
+        <Route path="/" element={<LandingPage />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/books" element={<BookListingPage />} />
         <Route path="/books/:id" element={<BookDetailsPage />} />
